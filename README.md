@@ -72,9 +72,9 @@ Each row represents a unique SKU (Stock Keeping Unit). Duplicate product names m
 
 # 🔧 Database Table Creation
 
-```sql id="wfh4y0"
+```sql id="wfh4y0
 CREATE TABLE zepto (
-    sku_id INT AUTO_INCREMENT PRIMARY KEY,
+    sku_id INT  serial PRIMARY KEY,
     category VARCHAR(120),
     name VARCHAR(150) NOT NULL,
     mrp DECIMAL(10,2),
